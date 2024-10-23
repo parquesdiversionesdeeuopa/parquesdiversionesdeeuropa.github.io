@@ -6,57 +6,115 @@
     <title>European Theme Parks</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            background-color: #007bff;
             color: #fff;
-            padding: 20px;
-            margin: 0;
+            background-color: #333; /* Dark background for contrast */
         }
-        .container {
-            padding: 20px;
-        }
-        .image-link {
-            display: inline-block;
-            width: 200px; /* Adjust as needed */
-            height: 200px; /* Adjust as needed */
-            margin: 10px;
+        .header {
+            position: relative;
+            width: 100%;
+            height: 300px; /* Adjust as needed */
             overflow: hidden;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
         }
-        .image-link img {
+        .header img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        .image-link:hover {
-            transform: scale(1.05);
+        .header-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 3em; /* Adjust as needed */
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .gallery-item {
+            margin: 10px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 250px;
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-item p {
+            margin: 0;
+            padding: 10px;
+            background-color: #444;
+            color: #fff;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
-    <h1>European Theme Parks</h1>
-    <div class="container">
-        <a href="https://example.com/disneyland-paris" class="image-link" target="_blank">
-            <img src="https://via.placeholder.com/200" alt="Disneyland Paris">
-        </a>
-        <a href="https://example.com/europa-park" class="image-link" target="_blank">
-            <img src="https://via.placeholder.com/200" alt="Europa Park">
-        </a>
-        <a href="https://example.com/portaventura" class="image-link" target="_blank">
-            <img src="https://via.placeholder.com/200" alt="PortAventura">
-        </a>
-        <a href="https://example.com/epcot" class="image-link" target="_blank">
-            <img src="https://via.placeholder.com/200" alt="EPCOT">
-        </a>
-    </div>
+    <header class="header">
+        <img src="prater.webp" alt="Theme Park">
+        <div class="header-text">European Theme Parks</div>
+    </header>
+    <!-- Gallery section -->
+    <section class="gallery">
+        <div class="gallery-item">
+            <a href="spain.html">
+                <img src="spain.jpg" alt="Spain">
+            </a>
+            <p>Spain</p>
+        </div>
+        <div class="gallery-item">
+            <a href="andorra.html">
+                <img src="andorra.jpg" alt="Andorra">
+            </a>
+            <p>Andorra</p>
+        </div>
+        <div class="gallery-item">
+            <a href="slovenia.html">
+                <img src="slovenia.jpg" alt="Slovenia">
+            </a>
+            <p>Slovenia</p>
+        </div>
+        <div class="gallery-item">
+            <a href="austria.html">
+                <img src="austria.jpg" alt="Austria">
+            </a>
+            <p>Austria</p>
+        </div>
+        <div class="gallery-item">
+            <a href="germany.html">
+                <img src="germany.jpg" alt="Germany">
+            </a>
+            <p>Germany</p>
+        </div>
+        <div class="gallery-item">
+            <a href="netherlands.html">
+                <img src="netherlands.jpg" alt="Netherlands">
+            </a>
+            <p>Netherlands</p>
+        </div>
+        <div class="gallery-item">
+            <a href="scotland.html">
+                <img src="scotland.jpg" alt="Scotland">
+            </a>
+            <p>Scotland</p>
+        </div>
+    </section>
 </body>
 </html>
